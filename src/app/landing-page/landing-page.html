@@ -1,91 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo CISLA - Home Page</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<!-- Header -->
-<header class="header">
+  <!-- Header -->
+  <header class="header">
     <div class="container">
-        <div class="logo">
-            <img src="" alt="Logo">
+      <div class="logo">
+        <img src="images/image001.png" alt="Logo Laboratorio">
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+
+      <!-- Navegación -->
+      <nav class="nav" id="nav-menu">
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#quality">Política de Calidad</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero con carrusel -->
+  <section class="hero">
+    <div class="hero-carousel">
+      <div class="hero-slide active" style="background-image:url('https://images.pexels.com/photos/954585/pexels-photo-954585.jpeg')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.pexels.com/photos/256262/pexels-photo-256262.jpeg')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.pexels.com/photos/248152/pexels-photo-248152.jpeg')"></div>
+    </div>
+    <div class="hero-text">
+      <h1> Grupo CISLA</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+      <button class="btn-primary">Conoce Más</button>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros con carrusel -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+
+      <div class="about-card">
+        <h3>Misión</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a tortor eget eros auctor tincidunt. Praesent
+          condimentum felis ac tempor malesuada.</p>
+      </div>
+
+      <div class="about-card">
+        <h3>Visión</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet neque sit amet magna cursus, vitae
+          bibendum purus consequat.</p>
+      </div>
+
+      <div class="about-card">
+        <h3>Valores</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed dolor nec sapien dignissim volutpat. Sed
+          convallis eu quam sed blandit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-carousel">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/954583/pexels-photo-954583.jpeg" alt="Servicio 1">
+          <h3>Servicio Uno</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nisl sit amet diam suscipit placerat.</p>
         </div>
-        <nav class="nav">
-            <a href="#about">Sobre Nosotros</a>
-            <a href="#services">Servicios</a>
-            <a href="#contact">Contacto</a>
-        </nav>
-    </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="container hero-content">
-        <h2>Asesorate con nosotros sobre <span>Sistemas de Gestión</span></h2>
-        <p>Asesoría en Sistemas de Gestión, facilitando la Cerificación de sus clientes según nromativa de Calidad,
-            Medioambiente, Seguridaad y Salud en el Trabajo, entre otras.</p>
-        <button class="btn-primary">Comenzar Ahora</button>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <h2>Sobre Nosotros</h2>
-        <p>GRUPO GOITSA TECNICOS Y CONSULTORES S.A. DE C.V.; es una empresa 100% mexicana fundada en el año 2013,
-            ubicada en Ciudad del Carmen, Campeche, con actividad a nivel nacional. Contamos con un equipo de Ingenieros
-            con una amplia experiencia para brindarle soluciones a sus necesidades en las áreas de Seguridaad Industrial
-            & Marítima, Salud en el trabajo y Protección Ambiental, así como en Mantenimiento general a embarcaciones,
-            limpieza de espacios confinados entre otros. </p>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="services">
-    <div class="container">
-        <h2>Nuestros Servicios</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>💻 Reparación & Mantenimiento de Equipos Electrónicos</h3>
-                <p><br>Especialistas en mantenimiento, instalación y reparación de equipos de comunicación, satelital y
-                    navegación, así como en quipos de generción de energía, motores eléctricos. <br> <br>Con más de 10
-                    años de experiencia en el mantenimiento y reparación de equipos eléctricos y electrónicos
-                    maríttimos, ofrecemos nuestros servivios para solucionar y atender sus necesidades en:</p>
-                <img src="https://biblus.accasoftware.com/es/wp-content/uploads/sites/3/2023/02/intervencion-de-reparacion.jpg"
-                    alt="Reparación & Mantenimiento de Equipos Electrónicos">
-            </div>
-            <div class="card">
-                <h3>🧽 Limpieza de Espacios Confinados</h3>
-                <p> <br> Especialistas en limpieza de tanques <br> Limpieza y reacondicionamiento de espacios confinados
-                    tales como tanques para el transporte de lodos de perforación, diesel, agua de lastre, agua potable,
-                    etc., así como silos para cemento barita. <br> <br> Nos especializamos en la limpieza de tanques y
-                    servicios relacionados en: offshore, barcos, plataformas e instalaciones onshore. </p>
-                <img src="https://www.emgservicios.cl/wp-content/uploads/2024/12/limpieza-en-espacios-confinados.jpg"
-                    alt="Limpieza de Espacios Confinados">
-            </div>
-            <div class="card">
-                <h3>👷‍♂️ Capacitación</h3>
-                <p> <br> Diseñamos, implementamos y damos cumplimiento a programas de capacitación de acuerdo a sus
-                    necesidades, registrados ante la secretaria del Trabajo y Prevención Social (STPS) y desarrollos por
-                    un grupo de instructures capacitados y certificados con experiencia en las áreas de Seguridad
-                    Industrial, Salud en el Trabajo y protección Ambiental. <br> <br> Impartimos cursos Teóricos -
-                    Prácticos, en los siguientes tópicos: <br> </p>
-                <img src="https://www.cofide.mx/hs-fs/hubfs/Im%C3%A1genes%20Agosto/Tipos%20de%20capacitaci%C3%B3n/art-3-Capacitacion-promocional.jpg?width=900&name=art-3-Capacitacion-promocional.jpg"
-                    alt="Capacitación">
-            </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/954584/pexels-photo-954584.jpeg" alt="Servicio 2">
+          <h3>Servicio Dos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nisl sit amet diam suscipit placerat.</p>
         </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/3735769/pexels-photo-3735769.jpeg" alt="Servicio 3">
+          <h3>Servicio Tres</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nisl sit amet diam suscipit placerat.</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
+  <!-- Política de Calidad -->
+  <section id="quality" class="quality">
     <div class="container">
-        <h2>Contáctanos</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="email" placeholder="Tu Email" required>
-            <textarea placeholder="Tu Mensaje" required></textarea>
-            <button type="submit" class="btn-primary">Enviar</button>
-        </form>
+      <h2>Política de Calidad</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt, nisl sed tincidunt maximus, sapien odio pretium risus, in elementum odio nunc in tellus. Integer vehicula nisl nec nisi luctus aliquet. Vivamus at libero vel justo bibendum vestibulum.</p>
     </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <p>&copy; 2025 CISLA LAB - Todos los derechos reservados</p>
-</footer>
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Contacto</h3>
+        <p><strong>Teléfono:</strong> (000) 123 456 789</p>
+        <p><strong>Email:</strong> contacto@laboratorio.com</p>
+        <p><strong>Dirección:</strong> Calle 123, Ciudad</p>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 Grupo CISLA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
