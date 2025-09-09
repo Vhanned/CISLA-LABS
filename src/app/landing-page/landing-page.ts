@@ -1,73 +1,59 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [],
   templateUrl: './landing-page.html',
-  styleUrl: './landing-page.css'
+  styleUrls: ['./landing-page.css']
 })
 export class LandingPage implements OnInit {
 
-  constructor(private router: Router) {
-  }
+  @ViewChild('contactModal') modal!: ElementRef<HTMLDivElement>;
+  @ViewChild('modalForm') modalForm!: ElementRef<HTMLFormElement>;
+
+  heroIndex = 0;
+  heroSlides!: NodeListOf<Element>;
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.carusel();
+    this.startCarousel();
   }
 
-  carusel() {
-    const heroSlides = document.querySelectorAll(".hero-slide");
-    let heroIndex = 0;
+  ngAfterViewInit(): void {
+    this.heroSlides = document.querySelectorAll(".hero-slide");
+  }
+
+  startCarousel() {
     setInterval(() => {
-      heroSlides[heroIndex].classList.remove("active");
-      heroIndex = (heroIndex + 1) % heroSlides.length;
-      heroSlides[heroIndex].classList.add("active");
+      if (this.heroSlides && this.heroSlides.length > 0) {
+        this.heroSlides[this.heroIndex].classList.remove("active");
+        this.heroIndex = (this.heroIndex + 1) % this.heroSlides.length;
+        this.heroSlides[this.heroIndex].classList.add("active");
+      }
     }, 4000);
   }
 
-  menuHamburguesa() {
-    const hamburger = document.getElementById("hamburger");
+  toggleMenu() {
     const navMenu = document.getElementById("nav-menu");
-
-    if (hamburger) {
-      hamburger.addEventListener("click", () => {
-        if (navMenu) {
-          navMenu.classList.toggle("show");
-        }
-      });
-    }
+    navMenu?.classList.toggle("show");
   }
 
   irAvisoPrivacidad() {
     this.router.navigate(['avisoPrivacidad']);
   }
 
-}
-
-// Modal
-const modal = document.getElementById("contactModal");
-const openModal = document.getElementById("openModal");
-const closeModal = document.querySelector(".close");
-
-openModal.addEventListener("click", () => {
-  modal.style.display = "block";
-});
-
-closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target == modal) {
-    modal.style.display = "none";
+  openModal() {
+    this.modal.nativeElement.style.display = "block";
   }
-});
 
-// Formulario modal
-document.getElementById("modalForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("✅ Gracias por tu mensaje. ¡Nos pondremos en contacto pronto!");
-  modal.style.display = "none"; 
-});
+  closeModal() {
+    this.modal.nativeElement.style.display = "none";
+  }
+
+  submitModalForm(event: Event) {
+    event.preventDefault();
+    alert("✅ Gracias por tu mensaje. ¡Nos pondremos en contacto pronto!");
+    this.closeModal();
+  }
+}
