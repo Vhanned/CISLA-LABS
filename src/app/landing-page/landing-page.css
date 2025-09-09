@@ -255,6 +255,15 @@ h3 {
   color: var(--color-gray-light);
 }
 
+.footer-copy a {
+  color: #fff;
+  text-decoration: none; 
+}
+
+.footer-copy a:hover {
+  text-decoration: underline; 
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
   .header .nav {
