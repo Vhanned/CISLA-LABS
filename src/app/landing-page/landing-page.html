@@ -42,11 +42,27 @@
         identificando problemas y garantizando la conformidad con las regulaciones, lo que permite a las empresas
         implementar las acciones
         correctivas necesarias para la mejora continua.</p>
-      <button class="btn-primary">Contáctanos</button>
+      <button class="btn-primary" id="openModal">Comenzar Ahora</button>
     </div>
   </section>
 
-  <!-- Sobre Nosotros carrusel -->
+  <!-- Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Contáctanos</h2>
+      <form id="modalForm">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <input type="text" placeholder="Asunto" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sobre Nosotros -->
   <section id="about" class="about">
     <div class="container">
       <h2>Sobre Nosotros</h2>
