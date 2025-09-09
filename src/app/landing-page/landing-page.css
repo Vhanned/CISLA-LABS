@@ -83,6 +83,9 @@ body {
   height: 70vh;
   overflow: hidden;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-carousel {
@@ -110,13 +113,24 @@ body {
   top: 50%;
   transform: translateY(-50%);
   padding: 0 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  max-width: 700px;
+  background-color: rgba(253, 253, 253, 0.397);
+  border-radius: 10px;
+  padding: 0.2rem;
 }
+
 
 .hero-text h1 {
   font-family: var(--font-titles);
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  max-width: 700px;
 }
 
 .hero-text p {
@@ -180,8 +194,8 @@ h3 {
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  text-align: left; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -199,7 +213,7 @@ h3 {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--color-text);
-  text-align: justify; 
+  text-align: justify;
 }
 
 /* Servicios */
@@ -213,7 +227,7 @@ h3 {
   background: #fff;
   padding: 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: transform 0.3s;
 }
@@ -257,11 +271,12 @@ h3 {
 
 .footer-copy a {
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer-copy a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 /* Responsividad */

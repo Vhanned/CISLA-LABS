@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,13 +8,16 @@ import { Component } from '@angular/core';
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.css'
 })
-export class LandingPage {
+export class LandingPage implements OnInit {
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
-  Carusel() {
-    // Hero carrusel
+  ngOnInit(): void {
+    this.carusel();
+  }
+
+  carusel() {
     const heroSlides = document.querySelectorAll(".hero-slide");
     let heroIndex = 0;
     setInterval(() => {
@@ -20,6 +25,23 @@ export class LandingPage {
       heroIndex = (heroIndex + 1) % heroSlides.length;
       heroSlides[heroIndex].classList.add("active");
     }, 4000);
+  }
+
+  menuHamburguesa() {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    if (hamburger) {
+      hamburger.addEventListener("click", () => {
+        if (navMenu) {
+          navMenu.classList.toggle("show");
+        }
+      });
+    }
+  }
+
+  irAvisoPrivacidad() {
+    this.router.navigate(['avisoPrivacidad']);
   }
 
 }
