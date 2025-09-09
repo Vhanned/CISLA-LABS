@@ -45,3 +45,29 @@ export class LandingPage implements OnInit {
   }
 
 }
+
+// Modal
+const modal = document.getElementById("contactModal");
+const openModal = document.getElementById("openModal");
+const closeModal = document.querySelector(".close");
+
+openModal.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Formulario modal
+document.getElementById("modalForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("✅ Gracias por tu mensaje. ¡Nos pondremos en contacto pronto!");
+  modal.style.display = "none"; 
+});
