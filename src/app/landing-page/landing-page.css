@@ -263,7 +263,7 @@ h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--color-secondary);
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-titles);
   text-align: center;
 }
 
@@ -272,6 +272,7 @@ h3 {
   line-height: 1.7;
   color: var(--color-text);
   text-align: justify; 
+  font-family: var(--font-body);
 }
 
 .about p {
