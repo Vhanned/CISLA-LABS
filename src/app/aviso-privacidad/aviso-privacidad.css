@@ -101,9 +101,9 @@ body {
 }
 
 .main-section ol, ul, li {
-  font-family: var(--font-family); 
+  font-family: var(--font-body); 
   font-size: 1rem;                
-  color: var(--color-text);       
+  color: var(--color-subtext);       
   line-height: 1.7;               
   margin: 0 0 1rem 1.5rem;        
   padding: 0;
