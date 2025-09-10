@@ -48,7 +48,8 @@ body {
 }
 
 .header .logo img {
-  height: 40px;
+  height: 5rem;
+  filter: drop-shadow(0px 0px 10px white);
 }
 
 .header .nav {
@@ -100,19 +101,21 @@ body {
   text-align: justify;
 }
 
-.main-section ol, ul, li {
-  font-family: var(--font-body); 
-  font-size: 1rem;                
-  color: var(--color-subtext);       
-  line-height: 1.7;               
-  margin: 0 0 1rem 1.5rem;        
+.main-section ol,
+ul,
+li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-subtext);
+  line-height: 1.7;
+  margin: 0 0 1rem 1.5rem;
   padding: 0;
   text-align: justify;
 }
 
 /* Footer */
 .footer {
-  background: var(--color-primary);
+  background: var(--color-secondary);
   color: #ffffff;
   padding: 2rem 1rem;
   margin-top: 3rem;

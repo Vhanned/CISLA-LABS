@@ -14,6 +14,6 @@ export class AvisoPrivacidad {
   }
 
     irInicio() {
-    this.router.navigate(['Inicio']);
+    this.router.navigate(['']);
   }
 }
