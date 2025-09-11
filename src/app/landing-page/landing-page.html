@@ -30,14 +30,14 @@
     <div class="hero-text">
       <h1> Grupo CISLA</h1>
       <p>El <span class="resaltado">sello de confianza</span> que tu empresa merece.</p>
-      <button class="btn-primary" id="openModal">CONTÁCTANOS AHORA</button>
+      <button class="btn-primary" id="openModal" (click)="abrirModal()">CONTÁCTANOS AHORA</button>
     </div>
   </section>
 
   <!-- Modal -->
   <div id="contactModal" class="modal">
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close" (click)="cerrarModal()">&times;</span>
       <h2>Contáctanos</h2>
       <form id="modalForm">
         <input type="text" placeholder="Nombre" required>
