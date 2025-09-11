@@ -306,6 +306,14 @@ h3 {
   transition: transform 0.3s;
 }
 
+.services .card h3{
+  font-family: var(--font-titles);
+}
+
+.services .card p{
+  font-family: var(--font-body);
+}
+
 .services .card:hover {
   transform: translateY(-5px);
 }
