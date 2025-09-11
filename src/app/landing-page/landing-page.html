@@ -50,6 +50,18 @@
     </div>
   </div>
 
+  <div class="hero-text">
+    <h1> Grupo CISLA</h1>
+    <p>El propósito de GRUPO CISLA es verificar y validar que los lugares de trabajo cumplan con las normas de
+      seguridad y salud de la
+      Secretaría del Trabajo y Previsión Social (STPS), a través de mediciones y análisis que detectan riesgos y
+      contaminantes, asegurando
+      así ambientes laborales seguros para los trabajadores. <br><br> GRUPO CISLA ofrece una evaluación confiable de
+      las condiciones de trabajo,
+      identificando problemas y garantizando la conformidad con las regulaciones, lo que permite a las empresas
+      implementar las acciones
+      correctivas necesarias para la mejora continua.</p>
+    <button class="btn-primary" (click)="abrirModal()">Contáctanos</button>
     <!-- Servicios -->
   <section id="services" class="services">
     <div class="container">
@@ -136,6 +148,22 @@
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="cerrarModal()">&times;</span>
+    <h2>Contáctanos</h2>
+    <form id="modalForm">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <input type="text" placeholder="Asunto" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+  </div>
+</div>
 
   <!-- Sobre Nosotros -->
   <section id="about" class="about">
