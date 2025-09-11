@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './landing-page.html',
   styleUrls: ['./landing-page.css']
 })
@@ -15,19 +17,7 @@ export class LandingPage {
 
   constructor(private router: Router) { }
 
-  abrirModal() {
-    const modal = document.querySelector('.modal') as HTMLElement;
-    if (modal) {
-      modal.style.display = 'block';
-    }
-  }
 
-  cerrarModal(){
-    const modal = document.querySelector('.modal') as HTMLElement;
-    if (modal) {
-      modal.style.display = 'none';
-    }
-  }
 
   irAvisoPrivacidad() {
     this.router.navigate(['avisoPrivacidad']);
