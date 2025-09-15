@@ -1,7 +1,7 @@
 /* Variables */
 :root {
-  --color-primary: #04217a;
-  --color-secondary: #004aad;
+  --color-primary: #004aad;
+  --color-secondary: #04217a;
   --color-gray-dark: #737373;
   --color-gray-light: #a6a6a6;
   --color-bg: #ffffff;
@@ -329,6 +329,7 @@ h3 {
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
+  margin-bottom: 20px;
 }
 
 /* Política */
