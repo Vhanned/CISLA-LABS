@@ -38,7 +38,7 @@ body {
 
 /* Header */
 .header {
-  background: var(--color-primary);
+  background: #004aad;
   color: white;
   padding: 1rem 0;
   position: sticky;
@@ -371,7 +371,7 @@ h3 {
 
 /* Footer */
 .footer {
-  background: var(--color-secondary);
+  background: #04217a;
   color: white;
   padding: 2rem 1rem;
   text-align: center;
