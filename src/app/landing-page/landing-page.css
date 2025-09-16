@@ -281,10 +281,6 @@ h3 {
   line-height: 1.7;
   color: var(--color-gray-light);
   text-align: justify; 
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: justify;
-  padding-bottom: 1.2rem;
 }
 
 .about p {
