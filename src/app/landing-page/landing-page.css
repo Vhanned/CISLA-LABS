@@ -333,12 +333,65 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* Política */
-.quality p {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: justify;
-  font-family: var(--font-body);
+
+/* Contact Info */
+.contact-info {
+  background: #f8f9fc;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.contact-info .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.contact-info .card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-info .card:hover {
+  transform: translateY(-8px);
+}
+
+.contact-info .card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.contact-info .card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-secondary);
+}
+
+.contact-info .card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--color-text);
 }
 
 /* Sección Donde Ubicarnos */
