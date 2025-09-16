@@ -317,11 +317,12 @@ h3 {
 
 .services .card p{
   font-family: "Poppins", sans-serif;
-  color: var(--color-body);
+  color: var(--color-gray-light);
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
-  margin-bottom: 10px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
 .services .card:hover {
@@ -349,6 +350,7 @@ h3 {
   margin: 0 auto;
   text-align: justify;
   margin-bottom: 10px;
+  
 }
 
 
