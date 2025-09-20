@@ -30,6 +30,8 @@ export class LandingPage {
   }
 
   irAvisoPrivacidad() {
-    this.router.navigate(['avisoPrivacidad']);
+    this.router.navigate(['avisoPrivacidad']).then(()=>{
+      window.scrollTo(0,0);
+    })
   }
 }
