@@ -418,6 +418,31 @@ h3 {
   color: var(--color-text);
 }
 
+/* Botón de WhatsApp */
+.whatsapp-btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.whatsapp-btn a {
+  display: inline-block;
+  background: #25D366; 
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.whatsapp-btn a:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+
 /* Sección Donde Ubicarnos */
 #iframe img,
 #iframe iframe {
