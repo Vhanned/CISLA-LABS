@@ -501,18 +501,20 @@ h3 {
   font-family: var(--font-body);
 }
 
-.footer-info h3 {
-  font-family: var(--font-titles);
+.footer-info h3,
+.footer-info p,
+.footer-info a {
+  color: white !important;
 }
 
 .footer-copy {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #737373;
+  color: white !important;
   cursor: pointer;
 }
 
-/* Resultados */
+/* Resultados */ */
 .results {
   background: #f8f9fc;
   padding: 4rem 1rem;
