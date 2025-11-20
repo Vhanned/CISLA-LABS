@@ -535,6 +535,7 @@ h3 {
   color: #737373;
   margin-bottom: 2rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 .results .grid {
@@ -561,11 +562,13 @@ h3 {
   font-weight: 700;
   color: #047857;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .results .card p {
   font-size: 1rem;
   color: #333333;
+  text-align: center;
 }
 
 /* Responsividad */
