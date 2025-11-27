@@ -1,125 +1,120 @@
 <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <img src="images/LogoB&W.png" alt="Logo Laboratorio">
-      </div>
-      
-      <!-- Botón hamburguesa -->
-      <div class="hamburger" id="hamburger">
-        ☰
-      </div>
-
-      <!-- Navegación -->
-      <nav class="nav" id="nav-menu">
-        <a href="#services">Servicios</a>
-        <a href="#about">Sobre Nosotros</a>
-        <a href="#contact-info">Contáctanos</a>
-        <a href="#iframe">Ubicación</a>
-      </nav>
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="images/LogoB&W.png" alt="Logo Laboratorio">
     </div>
-  </header>
 
-  <!-- Hero con carrusel -->
-  <section class="hero">
-    <div class="hero-carousel">
-      <div class="hero-slide" style="background-image:url('https://es.checklistfacil.com/blog/wp-content/uploads/sites/6/2025/04/certificacion-NOM.webp')"></div>
-      <div class="hero-slide active" style="background-image:url('https://i0.wp.com/www.segusa.com.mx/wp-content/uploads/2023/07/proteccion-personal-constuccion.jpg?resize=1140%2C641&ssl=1')"></div>
-      <div class="hero-slide" style="background-image:url('https://safesitehq.com/wp-content/uploads/2019/01/Happy-Employees-on-Site.jpg')"></div>
+    <!-- Botón hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      ☰
     </div>
-    <div class="hero-text">
-      <h1> Grupo CISLA</h1>
-      <p>El <span class="resaltado">sello de confianza</span> que tu empresa merece.</p>
-      <button class="btn-primary" id="openModal" (click)="abrirModal()">CONTÁCTANOS AHORA</button>
-    </div>
-  </section>
 
-  <!-- Modal -->
-  <div id="contactModal" class="modal">
-    <div class="modal-content">
-      <span class="close" (click)="cerrarModal()">&times;</span>
-      <h2>Contáctanos</h2>
-      <form id="modalForm">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <input type="tel" placeholder="Teléfono" required>
-        <input type="text" placeholder="Asunto" required>
-        <textarea placeholder="Mensaje" required></textarea>
-        <button type="submit" class="btn-primary">Enviar</button>
-      </form>
+    <!-- Navegación -->
+    <nav class="nav" id="nav-menu">
+      <a href="#services">Servicios</a>
+      <a href="#about">Sobre Nosotros</a>
+      <a href="#contact-info">Contáctanos</a>
+      <a href="#iframe">Ubicación</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero con carrusel -->
+<section class="hero">
+  <div class="hero-carousel">
+    <div class="hero-slide"
+      style="background-image:url('https://es.checklistfacil.com/blog/wp-content/uploads/sites/6/2025/04/certificacion-NOM.webp')">
+    </div>
+    <div class="hero-slide active"
+      style="background-image:url('https://i0.wp.com/www.segusa.com.mx/wp-content/uploads/2023/07/proteccion-personal-constuccion.jpg?resize=1140%2C641&ssl=1')">
+    </div>
+    <div class="hero-slide"
+      style="background-image:url('https://safesitehq.com/wp-content/uploads/2019/01/Happy-Employees-on-Site.jpg')">
     </div>
   </div>
+  <div class="hero-text">
+    <h1> Grupo CISLA</h1>
+    <p>El <span class="resaltado">sello de confianza</span> que tu empresa merece.</p>
+  </div>
+</section>
 
-    <!-- Servicios -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Con nosotros es más fácil</h2>
-      <p>
-        Proporcionamos lo necesario para que tu empresa cumplá con las siguientes certificaciones
-      </p> <br>
-      <div class="services-carousel">
-        <div class="card">
-          <img src="https://electrica-sanmiguel.com/wp-content/uploads/2021/09/NOM-025-STPS-2008-iluminacion.jpg" alt="Servicio 1">
-          <h3>Iluminación - NOM-025-STPS-2008</h3>
-          <p> </p>
-        </div>
- 
-        <div class="card">
-          <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/79096514/3378574557.jpg" alt="Servicio 2">
-          <h3>Ruido laboral, dosis personal y espectro acústico – NOM-011-STPS-2001</h3>
-          <p> </p>
-        </div>
-     
-        <div class="card">
-          <img src="https://idear.edu.mx/wp-content/uploads/2019/06/015.png" alt="Servicio 3">
-          <h3>Condiciones térmicas elevadas y abatidas – NOM-015-STPS-2001</h3>
-          <p> </p>
-        </div>
-       
-        <div class="card">
-          <img src="https://blog.asiec.com.mx/wp-content/uploads/2024/11/image.png" alt="Servicio 3">
-          <h3>Radiaciones ionizantes y no ionizantes – NOM-012-STPS-2012 y NOM-013-STPS-1993</h3>
-          <p> </p>
-        </div>
-        
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhfvow-AjGqV6hnj0WPAY46eOWHAdjpmETw&s" alt="Servicio 3">
-          <h3>Vibraciones mano brazo y cuerpo completo – NOM-024-STPS-2001</h3>
-          <p> </p>
-        </div>
-        
-        <div class="card">
-          <img src="https://metriq.mx/wp-content/uploads/2023/05/1625-2-earth-ground-testing.jpg" alt="Servicio 3">
-          <h3>Tierras físicas -NOM-022-STPS-2015</h3>
-          <p> </p>
-        </div>
-        
-        <div class="card">
-          <img src="https://consultoresambientalesdepuebla.com/wp-content/uploads/2022/11/norma-de-agentes-quimicos-scaled.jpg" alt="Servicio 3">
-          <h3>Evaluación a la Exposición de agentes químicos en ambiente laboral NOM-010-STPS-2014</h3>
-          <p>Vapores, Humos, Gases, Neblinas, Polvos, Aerosoles</p>
-        </div>
-        
-        <div class="card">
-          <img src="https://padillacarretillaselevadoras.com/wp-content/uploads/2021/05/riesgos_almacen.jpg" alt="Servicio 3">
-          <h3>Factores de riesgo ergonómcios</h3>
-          <p> Evaluación de los riesgos causados por actividades de trabajo como carga o posición. </p>
-        </div>
-        
-        <div class="card">
-          <img src="https://home.tequeremosescuchar.com/wp-content/uploads/2020/12/combatir-el-estre%CC%81s-scaled.jpeg" alt="Servicio 3">
-          <h3>Factores de riesgo psicosociales</h3>
-          <p>Evaluación de los riesgos que puedan derivar en problemas emocionales, cognitivos y conductuales </p>
-        </div>
+<!-- Servicios -->
+<section id="services" class="services">
+  <div class="container">
+    <h2>Con nosotros es más fácil</h2>
+    <p>
+      Proporcionamos lo necesario para que tu empresa cumplá con las siguientes certificaciones
+    </p> <br>
+    <div class="services-carousel">
+      <div class="card">
+        <img src="https://electrica-sanmiguel.com/wp-content/uploads/2021/09/NOM-025-STPS-2008-iluminacion.jpg"
+          alt="Servicio 1">
+        <h3>Iluminación - NOM-025-STPS-2008</h3>
+        <p> </p>
+      </div>
+
+      <div class="card">
+        <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/79096514/3378574557.jpg" alt="Servicio 2">
+        <h3>Ruido laboral, dosis personal y espectro acústico – NOM-011-STPS-2001</h3>
+        <p> </p>
+      </div>
+
+      <div class="card">
+        <img src="https://idear.edu.mx/wp-content/uploads/2019/06/015.png" alt="Servicio 3">
+        <h3>Condiciones térmicas elevadas y abatidas – NOM-015-STPS-2001</h3>
+        <p> </p>
+      </div>
+
+      <div class="card">
+        <img src="https://blog.asiec.com.mx/wp-content/uploads/2024/11/image.png" alt="Servicio 3">
+        <h3>Radiaciones ionizantes y no ionizantes – NOM-012-STPS-2012 y NOM-013-STPS-1993</h3>
+        <p> </p>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhfvow-AjGqV6hnj0WPAY46eOWHAdjpmETw&s"
+          alt="Servicio 3">
+        <h3>Vibraciones mano brazo y cuerpo completo – NOM-024-STPS-2001</h3>
+        <p> </p>
+      </div>
+
+      <div class="card">
+        <img src="https://metriq.mx/wp-content/uploads/2023/05/1625-2-earth-ground-testing.jpg" alt="Servicio 3">
+        <h3>Tierras físicas -NOM-022-STPS-2015</h3>
+        <p> </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://consultoresambientalesdepuebla.com/wp-content/uploads/2022/11/norma-de-agentes-quimicos-scaled.jpg"
+          alt="Servicio 3">
+        <h3>Evaluación a la Exposición de agentes químicos en ambiente laboral NOM-010-STPS-2014</h3>
+        <p>Vapores, Humos, Gases, Neblinas, Polvos, Aerosoles</p>
+      </div>
+
+      <div class="card">
+        <img src="https://padillacarretillaselevadoras.com/wp-content/uploads/2021/05/riesgos_almacen.jpg"
+          alt="Servicio 3">
+        <h3>Factores de riesgo ergonómcios</h3>
+        <p> Evaluación de los riesgos causados por actividades de trabajo como carga o posición. </p>
+      </div>
+
+      <div class="card">
+        <img src="https://home.tequeremosescuchar.com/wp-content/uploads/2020/12/combatir-el-estre%CC%81s-scaled.jpeg"
+          alt="Servicio 3">
+        <h3>Factores de riesgo psicosociales</h3>
+        <p>Evaluación de los riesgos que puedan derivar en problemas emocionales, cognitivos y conductuales </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-    <section id="results" class="results">
+<section id="results" class="results">
   <div class="container">
     <h2>¿Porqué con nosotros?</h2>
     <p>Contamos con basta experiencia en el campo y lo demostramos con mas de:</p>
-    
+
     <div class="grid">
       <div class="card">
         <h3>+500</h3>
@@ -137,134 +132,199 @@
   </div>
 </section>
 
-  <!-- Sobre Nosotros -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>Sobre Nosotros</h2>
+<!-- Sobre Nosotros -->
+<section id="about" class="about">
+  <div class="container">
+    <h2>Sobre Nosotros</h2>
 
-      <p>
-        El <span class="resaltado">propósito de GRUPO CISLA</span> es verificar y validar que los lugares de trabajo cumplan con las normas de
-        seguridad y salud de la Secretaría del Trabajo y Previsión Social (STPS), a través de mediciones y análisis que detectan riesgos y
-        contaminantes, asegurando así ambientes laborales seguros para los trabajadores. <br><br> 
-        GRUPO CISLA ofrece una <span class="resaltado">evaluación confiable</span> de las condiciones de trabajo,
-        identificando problemas y garantizando la conformidad con las regulaciones, lo que permite a las empresas
-        implementar las acciones
-        correctivas necesarias para la mejora continua.
-      </p>
-        <br><br>
-      <div class="about-card">
-        <h3>Misión</h3>
-        <p>Servicios de higiene y seguridad industrial: brindar evaluaciones oportunas, confiables y precisas al sector empresarial y público, con personal calificado y equipo adecuado.</p>
-      </div>
-
-      <div class="about-card">
-        <h3>Visión</h3>
-        <p>Compromiso con la excelencia: ofrecer servicios de calidad en el menor tiempo posible, en un ambiente de amabilidad, confianza y confidencialidad, buscando reconocimiento por la excelencia.</p>
-      </div>
-
-      <div class="about-card">
-        <h3>Valores</h3>
-        <p>Nos comprometemos a conocer, hacer nuestros y promover los valores que nos rigen:</p> <br>
-        <ol>
-          <li>
-            Puntualidad: respeto al tiempo y cumplimiento de compromisos.
-          </li>
-          <br>
-          <li>
-            Calidad: ofrecer servicios y resultados de excelencia.
-          </li>
-          <br>
-          <li>
-            Comunicación: relaciones fluidas y sinceras entre el equipo y con clientes.
-          </li>
-          <br>
-          <li>
-            Responsabilidad: estabilidad laboral, servicios de calidad y contribución al entorno.
-          </li>
-          <br>
-          <li>
-            Trabajo en equipo: integración y ambiente positivo de colaboración.
-          </li>
-          <br>
-          <li>
-            Integridad: actuar con honestidad, coherencia, ética y confidencialidad.
-          </li>
-          <br>
-        </ol>
-      </div>
+    <p>
+      El <span class="resaltado">propósito de GRUPO CISLA</span> es verificar y validar que los lugares de trabajo
+      cumplan con las normas de
+      seguridad y salud de la Secretaría del Trabajo y Previsión Social (STPS), a través de mediciones y análisis que
+      detectan riesgos y
+      contaminantes, asegurando así ambientes laborales seguros para los trabajadores. <br><br>
+      GRUPO CISLA ofrece una <span class="resaltado">evaluación confiable</span> de las condiciones de trabajo,
+      identificando problemas y garantizando la conformidad con las regulaciones, lo que permite a las empresas
+      implementar las acciones
+      correctivas necesarias para la mejora continua.
+    </p>
+    <br><br>
+    <div class="about-card">
+      <h3>Misión</h3>
+      <p>Servicios de higiene y seguridad industrial: brindar evaluaciones oportunas, confiables y precisas al sector
+        empresarial y público, con personal calificado y equipo adecuado.</p>
     </div>
-  </section>
 
-  <!-- Contactanos -->
-  <section id="contact-info" class="contact-info">
-    <div class="container">
-      <h2>Contáctanos</h2>
-      <p>Ponte en contácto con nosotros a travéz del siguiente formulario o a través de los siguientes medios:</p>
+    <div class="about-card">
+      <h3>Visión</h3>
+      <p>Compromiso con la excelencia: ofrecer servicios de calidad en el menor tiempo posible, en un ambiente de
+        amabilidad, confianza y confidencialidad, buscando reconocimiento por la excelencia.</p>
+    </div>
 
-    
-      <div class="contact-form">
-          <form id="contactFormInline">
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="email" placeholder="Tu Correo" required>
-            <input type="tel" placeholder="Tu Teléfono" required>
-            <input type="text" placeholder="Asunto" required>
-            <textarea placeholder="Tu Mensaje" required></textarea>
-            <button type="submit" class="btn-primary">Enviar</button>
-          </form>
-      </div>
+    <div class="about-card">
+      <h3>Valores</h3>
+      <p>Nos comprometemos a conocer, hacer nuestros y promover los valores que nos rigen:</p> <br>
+      <ol>
+        <li>
+          Puntualidad: respeto al tiempo y cumplimiento de compromisos.
+        </li>
+        <br>
+        <li>
+          Calidad: ofrecer servicios y resultados de excelencia.
+        </li>
+        <br>
+        <li>
+          Comunicación: relaciones fluidas y sinceras entre el equipo y con clientes.
+        </li>
+        <br>
+        <li>
+          Responsabilidad: estabilidad laboral, servicios de calidad y contribución al entorno.
+        </li>
+        <br>
+        <li>
+          Trabajo en equipo: integración y ambiente positivo de colaboración.
+        </li>
+        <br>
+        <li>
+          Integridad: actuar con honestidad, coherencia, ética y confidencialidad.
+        </li>
+        <br>
+      </ol>
+    </div>
+  </div>
+</section>
 
-      <div class="grid">
-        <div class="card">
-          <img src="images/telefonoicono.png" alt="Teléfono">
-          <h3>Teléfono</h3>
-          <p>(938) 104 48 37</p>
+<!-- Contactanos -->
+<section id="contact-info" class="contact-info">
+  <div class="container">
+    <h2>Contáctanos</h2>
+    <p>Ponte en contácto con nosotros a travéz del siguiente formulario o a través de los siguientes medios:</p>
+
+
+    <div class="contact-form">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contactFormInline">
+
+        <!-- Nombre -->
+        <div class="form-group">
+          <input type="text" formControlName="nombre" placeholder="Tu Nombre"
+            [class.error]="contactForm.get('nombre')?.invalid && contactForm.get('nombre')?.touched">
+          <small class="error-message" *ngIf="contactForm.get('nombre')?.invalid && contactForm.get('nombre')?.touched">
+            {{ getErrorMessage('nombre') }}
+          </small>
         </div>
 
-        <div class="card">
-          <img src="images/mailicono.png" alt="Correo">
-          <h3>Correo</h3>
-          <p>lcasanova@cisla.mx</p>
+        <!-- Correo -->
+        <div class="form-group">
+          <input type="email" formControlName="correo" placeholder="Tu Correo"
+            [class.error]="contactForm.get('correo')?.invalid && contactForm.get('correo')?.touched">
+          <small class="error-message" *ngIf="contactForm.get('correo')?.invalid && contactForm.get('correo')?.touched">
+            {{ getErrorMessage('correo') }}
+          </small>
         </div>
 
-        <div class="card">
-          <img src="images/redessocialesicono.png" alt="Redes Sociales">
-          <h3>Redes Sociales</h3>
-          <p>@GRUPO_CISCLA (Facebook / Instagram)</p>
+        <!-- Teléfono -->
+        <div class="form-group">
+          <input type="tel" formControlName="telefono" placeholder="Tu Teléfono (10 dígitos)"
+            [class.error]="contactForm.get('telefono')?.invalid && contactForm.get('telefono')?.touched">
+          <small class="error-message"
+            *ngIf="contactForm.get('telefono')?.invalid && contactForm.get('telefono')?.touched">
+            {{ getErrorMessage('telefono') }}
+          </small>
         </div>
-      </div>
 
-        <div class="whatsapp-btn">
-          <a href="https://wa.me/xxxxxxxxxxxxx" target="_blank">
-            💬 Contactar por WhatsApp
-          </a>
+        <!-- Asunto -->
+        <div class="form-group">
+          <input type="text" formControlName="asunto" placeholder="Asunto"
+            [class.error]="contactForm.get('asunto')?.invalid && contactForm.get('asunto')?.touched">
+          <small class="error-message" *ngIf="contactForm.get('asunto')?.invalid && contactForm.get('asunto')?.touched">
+            {{ getErrorMessage('asunto') }}
+          </small>
         </div>
-      
+
+        <!-- Mensaje -->
+        <div class="form-group">
+          <textarea formControlName="mensaje" placeholder="Tu Mensaje (mínimo 10 caracteres)" rows="5"
+            [class.error]="contactForm.get('mensaje')?.invalid && contactForm.get('mensaje')?.touched"></textarea>
+          <small class="error-message"
+            *ngIf="contactForm.get('mensaje')?.invalid && contactForm.get('mensaje')?.touched">
+            {{ getErrorMessage('mensaje') }}
+          </small>
+        </div>
+
+        <!-- Botón de envío -->
+        <button type="submit" class="btn-primary" [disabled]="enviando">
+          <span *ngIf="!enviando">Enviar</span>
+          <span *ngIf="enviando">
+            <span class="spinner"></span> Enviando...
+          </span>
+        </button>
+
+        <!-- Mensajes de éxito/error -->
+        <div *ngIf="mensajeExito" class="alert alert-success">
+          ✅ {{ mensajeExito }}
+        </div>
+
+        <div *ngIf="mensajeError" class="alert alert-error">
+          ❌ {{ mensajeError }}
+        </div>
+      </form>
     </div>
-  </section>
 
- <!-- Mapa -->
-  <section id="iframe" class="iframe">
-    <div class="container">
-      <h2>Mapa de alcance</h2>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.8537420345865!2d-91.84072384841237!3d18.649833593074746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f1a82d03d9d8db%3A0xd8cac3b8dccdbf36!2sC.%2026-A%2C%20Cdad.%20del%20Carmen%2C%20Camp.!5e0!3m2!1ses-419!2smx!4v1757537607775!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-      <!-- <img src="Mapa.jpg" alt="mapa">-->
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact" class="footer">
-    <div class="container footer-content">
-      <div class="footer-info">
-        <h3>Contacto</h3>
-        <p><strong>Teléfono:</strong> (938) 104 48 37</p>
-        <p><strong>Email:</strong> lcasanova@cisla.mx</p>
-        <p><strong>Dirección:</strong> Calle 26A S/N Col. Electricistas, Ciudad del Carmen, Campeche</p>
+    <div class="grid">
+      <div class="card">
+        <img src="images/telefonoicono.png" alt="Teléfono">
+        <h3>Teléfono</h3>
+        <p>(938) 104 48 37</p>
       </div>
-      <div class="footer-copy">
-        <p>&copy; 2025 Grupo CISLA. Todos los derechos reservados.</p> <a (click)="irAvisoPrivacidad()">Aviso de
-          privacidad</a>
+
+      <div class="card">
+        <img src="images/mailicono.png" alt="Correo">
+        <h3>Correo</h3>
+        <p>lcasanova@cisla.mx</p>
+      </div>
+
+      <div class="card">
+        <img src="images/redessocialesicono.png" alt="Redes Sociales">
+        <h3>Redes Sociales</h3>
+        <p>@GRUPO_CISCLA (Facebook / Instagram)</p>
       </div>
     </div>
-  </footer>
+
+    <div class="whatsapp-btn">
+      <a href="https://wa.me/xxxxxxxxxxxxx" target="_blank">
+        💬 Contactar por WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Mapa -->
+<section id="iframe" class="iframe">
+  <div class="container">
+    <h2>Mapa de alcance</h2>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.8537420345865!2d-91.84072384841237!3d18.649833593074746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f1a82d03d9d8db%3A0xd8cac3b8dccdbf36!2sC.%2026-A%2C%20Cdad.%20del%20Carmen%2C%20Camp.!5e0!3m2!1ses-419!2smx!4v1757537607775!5m2!1ses-419!2smx"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <img src="Mapa.jpg" alt="mapa">-->
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="footer">
+  <div class="container footer-content">
+    <div class="footer-info">
+      <h3>Contacto</h3>
+      <p><strong>Teléfono:</strong> (938) 104 48 37</p>
+      <p><strong>Email:</strong> lcasanova@cisla.mx</p>
+      <p><strong>Dirección:</strong> Calle 26A S/N Col. Electricistas, Ciudad del Carmen, Campeche</p>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2025 Grupo CISLA. Todos los derechos reservados.</p> <a (click)="irAvisoPrivacidad()">Aviso de
+        privacidad</a>
+    </div>
+  </div>
+</footer>
